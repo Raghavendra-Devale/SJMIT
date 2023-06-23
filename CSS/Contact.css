@@ -1,0 +1,39 @@
+body
+        {
+            background-color: rgb(42, 134, 134);                       
+        }
+        h1{
+            text-align: center;
+            color: #a93c29;
+        }
+        .navbar{
+            background-color: rgba(117, 212, 197, 0.479);
+            border-radius:30px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 15px 20px;
+        }
+        .navbar li a{
+            padding: 5px 5px;
+            text-decoration: none;
+            color: white;
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+        .navbar li a:hover{
+            color: black
+        }

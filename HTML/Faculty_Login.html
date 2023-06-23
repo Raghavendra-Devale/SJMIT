@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty_Login</title> 
+    <link rel="stylesheet" href="http://localhost/SJMIT/CSS/Fac_Log.css">
+</head>
+<body>
+    <h1>S J M Institute of technology </h1>
+    <header>
+        <nav class="navbar">
+            <ul>
+            <li><a href="Home.html">Home</a> </li>
+            <li><a href="About.html">About</a> </li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search this website">
+            </div>
+            </ul>
+        </nav>
+    </header>
+    <form action="http://localhost/SJMIT/PHP/FacultyLog.php" method="post">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+              
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+              
+              <input type="submit" value="Login">
+        
+    </form> 
+</body>
+</html>

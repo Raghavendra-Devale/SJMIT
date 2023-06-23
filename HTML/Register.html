@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form action="http://localhost/SJMIT/PHP/Register.php" method="post">
+        <div>
+            Name <input type="text" name="Sname"><br><br>
+            USN <input type="text" name="Usn"><br><br>
+            Section <input type="text" name="Sec"><br><br>
+            Address <input type="text" name="Address"><br><br>
+            Phone <input type="text" name="Phone"><br><br>
+            Caste <input type="text" name="Caste"><br><br>
+
+            Branch <select name="branch" id="branch">
+                <option value="CS">Computer Scince & Engineering</option>
+                <option value="EC">Electronics & Communication Engineering</option>
+                <option value="EE">Electronics & Electrical Engineering</option>
+                <option value="CV">Civil Engineering</option>
+                <option value="ME">Mechanical Engineering</option>
+            </select><br><br>
+            Sem <Select name="semes" id="sem">
+                <Option value="1">I</Option>
+                <option value="2">II</option>
+                <option value="3">III</option>
+                <option value="4">IV</option>
+                <option value="5">V</option>
+                <option value="6">VI</option>
+                <option value="7">VII</option>
+                <option value="8">VIII</option>
+            </Select><br><br>
+        </div>
+        <button class="but"> Register </button>
+    </form>        
+</body>
+</html>
