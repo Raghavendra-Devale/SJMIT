@@ -14,7 +14,7 @@ $conn = mysqli_connect("localhost", "root", "", "sjm");
 // Check if the entered password is in the database
 $username = $_POST["username"];
 $password = $_POST["password"];
-$sql = "SELECT * FROM student WHERE username='$username' AND password='$password'";
+$sql = "SELECT * FROM students WHERE username='$username' AND password='$password'";
 $result = mysqli_query($conn, $sql);
 
 // If the password is found in the database, return true

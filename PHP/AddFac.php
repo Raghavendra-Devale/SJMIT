@@ -22,7 +22,7 @@
         $Pass = $_POST['pwd'];
 
         // Query to insert into
-        $sql="insert into add_fac values('$Fname','$EmpId','$Qual','$Exp','$Spec','$Uname','$Pass')";
+        $sql="insert into faculty values('$Fname','$EmpId','$Qual','$Exp','$Spec','$Uname','$Pass')";
 		mysql_query($sql);				
         
         echo "Added Faculty";
