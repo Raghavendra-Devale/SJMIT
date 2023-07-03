@@ -20,7 +20,7 @@ $result = mysqli_query($conn, $sql);
 // If the password is found in the database, return true
 if (mysqli_num_rows($result) > 0) {
     echo "true";
-    $url = 'http://localhost/SJMIT/HTML/Upload.html';
+    $url = 'http://localhost/SJMIT/PHP/Uploader.php';
     $linkText = 'Add Notes';
     echo "<a href='$url'>$linkText</a> <br>";
 } else {
