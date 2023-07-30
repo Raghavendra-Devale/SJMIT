@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty_Notes</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <!-- Semester and subject selection form -->
+        <h2>Select Semester and Subject</h2>
+        <form action="http://localhost/SJMIT/PHP/upload.php" method="post" enctype="multipart/form-data">
+            <label for="semester">Select Semester:</label>
+            <select name="semester" id="semester" onchange="updateSubjects()" required>
+                <option value="">Select Semester</option>
+                <option value="1st_Semester">1st Semester</option>
+                <option value="2nd_Semester">2nd Semester</option>
+                <option value="3rd_Semester">3rd Semester</option>
+                <option value="4th_Semester">4th Semester</option>
+                <option value="5th_Semester">5th Semester</option>
+                <option value="6th_Semester">6th Semester</option>
+                <option value="7th_Semester">7th_Semster</option>
+                <option value="8th_Semester">8th_Semester</option>                
+            </select>
+            <label for="subject">Select Subject:</label>
+            <select name="subject" id="subject" required>
+                <option value="">Select Semester First</option>
+                <!-- Subjects will be dynamically added here based on the selected semester -->
+            </select>
+            <br>
+            <input type="file" name="pdfFile" id="pdfFile">
+            <input type="submit" value="Upload">
+        </form>
+    
+        <!-- Link the external JavaScript file -->
+        <script src="http://localhost/SJMIT/JS/Notes.js"></script>
+</body>
+</html>
